@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PopCornFactory</string>
+    <string name="descripcion_menuPrincipal">Welcome to Popcorn Factoty, home of the best series and movies. Just lay down, make some popcorn and enjoy!</string>
+    <string name="boton_Entrar">Get me in!</string>
+</resources>

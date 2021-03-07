@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondoPrincipal"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="470dp"
+        android:src="@drawable/popcorn"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/descripcion_menuPrincipal"
+        android:textColor="@color/fondoLetraPrincipal"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="18sp"
+        android:paddingHorizontal="30dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        />
+
+    <Button
+        android:id="@+id/boton_principal"
+        android:layout_width="219dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/forma_botones"
+        android:text="@string/boton_Entrar"
+        android:textColor="@color/white" />
+
+
+
+</LinearLayout>

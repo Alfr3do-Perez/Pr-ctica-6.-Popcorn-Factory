@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetallePelicula">
+
+    <ImageView
+        android:id="@+id/pelicula_imagen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bones"
+        />
+
+    <TextView
+        android:id="@+id/pelicula_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BONES"
+        android:textSize="24sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/pelicula_descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aqui va toda la informacion de la pelicula estoy rellenando para ver como se miraria."
+        android:textSize="20sp"
+        />
+
+</LinearLayout>
