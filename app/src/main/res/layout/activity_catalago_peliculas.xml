@@ -5,23 +5,75 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CatalagoPeliculasActivity">
+    tools:context=".CatalagoPeliculasActivity"
+    android:paddingHorizontal="20dp"
+    android:background="@drawable/fondo_pantalla_gradiant">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Series"
-        android:textSize="30sp"
-        android:textColor="@color/fondoBotonPrincipal"
-        />
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Series"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/fondoBotonPrincipal"
+            />
+
+        <ImageView
+            android:layout_width="270dp"
+            android:layout_height="2dp"
+            android:background="@drawable/barra_separadora"
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="5dp"
+            />
+    </LinearLayout>
 
     <GridView
-        android:id="@+id/gridview"
+        android:id="@+id/gridviewSeries"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:numColumns="3"
-        android:divider="@null"
-        android:dividerHeight="0dp"
+        android:layout_marginBottom="10dp"
+        android:verticalSpacing="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp">
+
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="2dp"
+            android:background="@drawable/barra_separadora"
+            android:layout_marginTop="22dp"
+            android:layout_marginRight="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Peliculas"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/fondoBotonPrincipal"
+            />
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridviewPeliculas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:verticalSpacing="10dp"
         ></GridView>
 
 </LinearLayout>
