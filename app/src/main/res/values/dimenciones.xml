@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="botones_tamañoLetra">18sp</dimen>
+    <dimen name="botones_paddingHorizontal">20dp</dimen>
+    <dimen name="botones_paddingVertical">8dp</dimen>
+
+    <dimen name="radioGroup_marginTop">20dp</dimen>
+    <dimen name="radioGroup_paddingHorizontal">10dp</dimen>
+
+    <dimen name="radioButton_tamañoLetra">20sp</dimen>
+    <dimen name="radioButton_marginHorizontal">3dp</dimen>
+    <dimen name="radioButton_tamaño">60dp</dimen>
+    <dimen name="radioButton_paddingTop">1dp</dimen>
+
+    <dimen name="simbolos">40dp</dimen>
+    <dimen name="simbolos_texto">18sp</dimen>
+    
+    <dimen name="formulario_tamañoLetra">20sp</dimen>
+</resources>

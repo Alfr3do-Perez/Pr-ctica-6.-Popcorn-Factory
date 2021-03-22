@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,49 +9,90 @@
     tools:context=".DetallePelicula"
     android:background="@drawable/fondo_pantalla_gradiant">
 
-    <ImageView
-        android:id="@+id/pelicula_imagen"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="310dp"
-        android:src="@drawable/headerbighero6"
-        android:scaleType="fitXY"
-        android:layout_marginBottom="15dp"
-        />
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingLeft="35dp"
-        android:layout_marginBottom="10dp">
+            <ImageView
+                android:id="@+id/pelicula_imagen"
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                android:src="@drawable/headerbighero6"
+                android:scaleType="fitXY"
+                android:layout_marginBottom="15dp"
+                />
 
-        <TextView
-            android:id="@+id/pelicula_nombre"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Big Hero 6"
-            android:textSize="25sp"
-            android:textColor="@color/amarillo"
-            android:textStyle="bold"
-            />
-        <ImageView
-            android:layout_width="400dp"
-            android:layout_height="2dp"
-            android:background="@color/amarillo"
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="10dp"
-            />
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="35dp"
+                android:layout_marginBottom="10dp">
 
-    <TextView
-        android:id="@+id/pelicula_descripcion"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Aqui va toda la informacion de la pelicula estoyasdasd fsafasfasf asfasf asfasfasf asdasdasdasd rellenando para ver como se miraria."
-        android:textSize="14sp"
-        android:textColor="@color/white_grey"
-        android:paddingHorizontal="35dp"
-        android:layout_gravity="right"
-        />
+                <TextView
+                    android:id="@+id/pelicula_nombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Big Hero 6"
+                    android:textSize="25sp"
+                    android:textColor="@color/amarillo"
+                    android:textStyle="bold"
+                    />
+                <View
+                    android:layout_width="400dp"
+                    android:layout_height="2dp"
+                    android:background="@drawable/barra_separadora"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/pelicula_descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aqui va toda la informacion de la pelicula estoyasdasd fsafasfasf asfasf asfasfasf asdasdasdasd rellenando para ver como se miraria."
+                android:textSize="14sp"
+                android:textColor="@color/white_grey"
+                android:paddingHorizontal="35dp"
+                android:layout_gravity="right"
+                />
+
+            <Button
+                android:id="@+id/buyTickets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Buy my ticket!"
+                android:background="@drawable/forma_botones"
+                android:textSize="@dimen/botones_tamañoLetra"
+                android:paddingHorizontal="@dimen/botones_paddingHorizontal"
+                android:paddingVertical="@dimen/botones_paddingVertical"
+                android:textColor="@color/colorLetra"
+                android:layout_marginTop="30dp"
+                />
+
+            <TextView
+                android:id="@+id/seatsLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="italic"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white_grey"
+                android:text="disponiblididad"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"></LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

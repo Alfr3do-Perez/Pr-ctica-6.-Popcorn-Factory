@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ComprarBoletoActivity"
+    android:background="@drawable/fondo_pantalla_gradiant">
+
+    <ImageView
+        android:id="@+id/pelicula_imagen"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/headerbighero6"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="15dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="35dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/pelicula_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Big Hero 6"
+            android:textSize="25sp"
+            android:textColor="@color/amarillo"
+            android:textStyle="bold"
+            />
+        <View
+            android:layout_width="400dp"
+            android:layout_height="2dp"
+            android:background="@drawable/barra_separadora"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/numero_asiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Seat: 15"
+        android:textSize="25sp"
+        android:textStyle="italic|bold"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:textColor="@color/amarillo"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="50dp"
+        android:paddingTop="30dp">
+
+
+        <EditText
+            android:id="@+id/cliente_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/campo_texto"
+            android:hint="Nombre"
+            android:inputType="textPersonName"
+            android:paddingLeft="12dp"
+            android:textColor="@color/colorLetra"
+            android:textSize="@dimen/formulario_tamañoLetra" />
+
+        <RadioGroup
+            android:id="@+id/grupo_metodoPago"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/radioGroup_marginTop"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <RadioButton
+                android:id="@+id/rb_efectivo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cash"
+                android:textColor="@color/amarillo"
+                android:textSize="@dimen/botones_tamañoLetra"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_tarjeta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Credit Cards"
+                android:textColor="@color/amarillo"
+                android:textSize="@dimen/botones_tamañoLetra"
+                />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/boton_buyTicket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/forma_botones"
+            android:text="Buy ticket!"
+            android:textColor="@color/colorLetra"
+            android:textSize="@dimen/botones_tamañoLetra"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

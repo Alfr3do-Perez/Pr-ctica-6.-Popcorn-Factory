@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PopCornFactory">
-        <activity android:name=".CatalagoSeriesActivity"></activity>
+        <activity android:name=".ComprarBoletoActivity"></activity>
+        <activity android:name=".SeleccionDeAsientos" />
+        <activity android:name=".CatalagoSeriesActivity" />
         <activity android:name=".CatalagoPeliculasActivity" />
         <activity android:name=".DetallePelicula" />
         <activity android:name=".MainActivity">

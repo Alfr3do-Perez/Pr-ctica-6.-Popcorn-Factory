@@ -29,12 +29,15 @@
 
     <Button
         android:id="@+id/boton_principal"
-        android:layout_width="219dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@drawable/forma_botones"
+        android:paddingHorizontal="@dimen/botones_paddingHorizontal"
+        android:paddingVertical="@dimen/botones_paddingVertical"
         android:text="@string/boton_Entrar"
-        android:textColor="@color/white" />
+        android:textColor="@color/colorLetra"
+        android:textSize="@dimen/botones_tamañoLetra" />
 
 
 
